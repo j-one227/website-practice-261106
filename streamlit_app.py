@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="나를 소개합니다", page_icon=":seedling:", layout="wide")
 
-NAME = "홍길동"
+NAME = "김재원"
 INTRO = "좋아하는 것을 깊이 들여다보고, 새로운 경험을 기록하며 나만의 방향을 찾아갑니다."
 AFFILIATION = "소속 또는 학교를 입력하세요"
 DREAM = "나의 꿈을 한 문장으로 적어보세요."
@@ -33,6 +33,15 @@ st.markdown(
         background: radial-gradient(ellipse at 85% 0%, rgba(120, 139, 122, 0.13), transparent 30%), var(--paper);
         color: var(--ink);
         font-family: 'Noto Sans KR', sans-serif;
+    }
+    [data-testid="stAppViewContainer"] {
+        background: radial-gradient(ellipse at 85% 0%, rgba(120, 139, 122, 0.13), transparent 30%), var(--paper);
+    }
+    [data-testid="stHeader"] {
+        background: var(--paper);
+    }
+    [data-testid="stMain"] {
+        background: transparent;
     }
     .block-container {
         max-width: 1120px;
